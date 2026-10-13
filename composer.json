@@ -1,0 +1,30 @@
+{
+  "name": "forumulate/laravel",
+  "description": "Forumulate comments, docs search and changelog as Blade components, plus cached content helpers for Laravel.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": ["laravel", "forumulate", "comments", "docs", "forum", "blog", "changelog"],
+  "homepage": "https://github.com/forumulate/laravel",
+  "require": {
+    "php": "^8.1",
+    "illuminate/support": "^10.0|^11.0|^12.0",
+    "illuminate/view": "^10.0|^11.0|^12.0",
+    "illuminate/http": "^10.0|^11.0|^12.0",
+    "illuminate/cache": "^10.0|^11.0|^12.0",
+    "league/commonmark": "^2.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Forumulate\\Laravel\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": ["Forumulate\\Laravel\\ForumulateServiceProvider"],
+      "aliases": {
+        "Forumulate": "Forumulate\\Laravel\\Facades\\Forumulate"
+      }
+    }
+  },
+  "minimum-stability": "stable"
+}
